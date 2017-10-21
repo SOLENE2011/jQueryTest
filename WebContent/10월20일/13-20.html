@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-1.7.js"></script>
+<script>
+	$(document).ready(function () {
+		/* 5초 후에 코드를 실행합니다 */
+		setTimeout(function () {
+			/* 변수 선언 */
+			var value = $('select > option:selected').val();
+			alert(value);
+		}, 5000);
+	});
+</script>
+</head>
+<body>
+	<select>
+		<option>박</option>
+		<option>효</option>
+		<option>선</option>
+	</select>
+</body>
+</html>

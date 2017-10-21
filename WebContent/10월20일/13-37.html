@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-1.7.js"></script>
+<script>
+/* function 익명함수 */
+	$(document).ready(function() {
+		var object = {name: 'SOLENE' };
+		
+		/* extend() 메서드를 사용합니다. */
+		/* 많은 수의 속성 추가할 때 생기는 문제를 해결하는 메서드 */
+		$.extend(object, {gender: 'Female', part: 'Second Guitar'
+			});
+		
+		var output = '';
+		$.each(object, function(key, item) {
+			output += key + ': ' + item + '\n';
+		});
+		alert(output);
+	});
+</script>
+</head>
+<body>
+
+</body>
+</html>
